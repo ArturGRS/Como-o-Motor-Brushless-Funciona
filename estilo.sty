@@ -1,0 +1,60 @@
+%-------------------- Pacotes essenciais --------------------%
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazil]{babel}
+\usepackage{graphicx}
+\usepackage{amsmath, amssymb}
+\usepackage{float}
+\usepackage{indentfirst}
+\usepackage{setspace}
+\usepackage[toc,page]{appendix}
+\usepackage{fancyhdr}
+\usepackage{apalike}
+\usepackage{multicol}
+\usepackage{xcolor}
+
+%-------------------- Margens e layout ABNT --------------------%
+\usepackage[a4paper, left=3cm, right=2cm, top=3cm, bottom=2cm]{geometry}
+\setlength{\parindent}{1.25cm} % Recuo de parágrafo padrão ABNT
+\setlength{\parskip}{0pt}      % Sem espaço extra entre parágrafos
+
+%-------------------- Fonte padrão ABNT --------------------%
+\renewcommand{\familydefault}{\rmdefault} % Times New Roman
+
+%-------------------- Espaçamento ABNT --------------------%
+\onehalfspacing
+
+%-------------------- Cabeçalho e rodapé ABNT --------------------%
+\pagestyle{fancy}
+\setlength{\headheight}{14pt}
+\fancyhf{}
+\fancyhead[R]{\thepage} % Número da página à direita no cabeçalho
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+%-------------------- Configuração de links --------------------%
+\usepackage[
+  colorlinks=true,
+  citecolor=blue,
+  linkcolor=black,
+  urlcolor=blue
+]{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=blue,
+    urlcolor=blue,
+}
+
+%-------------------- Teoremas (opcional) --------------------%
+\newtheorem{theorem}{Lei}
+
+%-------------------- Header e Footer personalizados --------------------%
+\pagestyle{fancy}
+\setlength{\headheight}{14pt}
+\fancyhf{}
+\fancyhead[L]{\textit{Artur Gemaque Rezende da Silva}}
+\fancyhead[R]{\textit{23203758}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
